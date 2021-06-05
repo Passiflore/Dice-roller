@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="icon" href="dice.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <div class="roll">
+  <h1 class="title"> Dice Roller</h1>
+  <div class="diceRoller">
+
+    <!--- Dice Roller form-->
+   <div class="form">
+
+     <!--- Number of roll-->
+     <label for="typeOfDice"> Number of faces </label>
+     <input type="number" name="typeOfDice" class="typeOfDice input" min="1" placeholder="6">
+ 
+   <!--- Number of throw-->
+     <label for="numberOfThrow"> Number of throw</label>
+     <input type="number" name="numberOfThrow" class="numberOfThrow input" min="1" max="5"placeholder="1">
+  </div>
+
+  <!--- Button Result-->
+  <div class="rollButton">
+    <a href="#" class="button">Roll</a>
+  </div>
+
+
+  <!--- Output Result -->
+  <div class="result">
+    <label for="output" class="textResult"> Result : </label>
+    <input type="number" disabled class="output hidden">
+    <input type="number" disabled class="output2 hidden">
+    <input type="number" disabled class="output3 hidden">
+    <input type="number" disabled class="output4 hidden">
+    <input type="number" disabled class="output5 hidden">
+   </div>
+  </div>
+ </div>  
+ <script src="script.js"></script>
+</body>
+</html>
